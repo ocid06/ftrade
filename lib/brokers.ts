@@ -108,7 +108,7 @@ export const brokers: Broker[] = [
 
   {
     name: "Tickmill",
-    type: "auto",
+    type: "manual",
     ibLink: "https://secure.itr-tickmill.com/?utm_campaign=ib_link&utm_content=IB89045395&utm_medium=Open+Account&utm_source=link&lp=https%3A%2F%2Fsecure.itr-tickmill.com%2Fid%2Fsign-up%2F",
     domain: "tickmill.com",
     instruments: [
@@ -132,7 +132,7 @@ export const brokers: Broker[] = [
 
   {
     name: "FP Markets",
-    type: "auto",
+    type: "manual",
     ibLink: "https://portal.fpmarkets.com/register?redir=stv&fpm-affiliate-utm-source=IB&fpm-affiliate-agt=64952",
     domain: "fpmarkets.com",
     instruments: [
@@ -144,7 +144,7 @@ export const brokers: Broker[] = [
 
   {
     name: "Vantage",
-    type: "auto",
+    type: "manual",
     ibLink: "https://www.vantagemarketsea.com/id/open-live-account/?affid=MjA3OTY2Mzk=",
     domain: "vantagemarketsea.com",
     instruments: [
@@ -196,7 +196,7 @@ export const brokers: Broker[] = [
 
   {
     name: "PU Prime",
-    type: "auto",
+    type: "manual",
     ibLink: "https://puvip.co/la-partners/id/0bGTzP0i",
     domain: "puprime.com",
     instruments: [
@@ -208,7 +208,7 @@ export const brokers: Broker[] = [
 
   {
     name: "VT Markets",
-    type: "auto",
+    type: "manual",
     ibLink: "https://www.vtmarkets.com/trade-now/?affid=22395035",
     domain: "vtmarkets.com",
     instruments: [
@@ -220,7 +220,7 @@ export const brokers: Broker[] = [
 
   {
     name: "EC Markets",
-    type: "auto",
+    type: "manual",
     ibLink: "https://i.ecmarkets.sc/api/client/pm/2/JTX4W",
     domain: "ecmarkets.com",
     instruments: [
@@ -256,7 +256,7 @@ export const brokers: Broker[] = [
 
  {
     name: "JustMarkets",
-    type: "auto",
+    type: "manual",
     ibLink: "https://one.justmarkets.link/a/tp7yd30m8b",
     domain: "justmarkets.com",
     instruments: [
