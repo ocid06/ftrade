@@ -86,7 +86,7 @@ export default function FXPayoutPage() {
             </h1>
 
             <p className="text-sm leading-relaxed mb-8" style={{ color: '#374151' }}>
-              Maksimalkan profit trading Anda dengan cashback & rebate hingga 90% dari berbagai broker terpercaya.
+              Maksimalkan profit trading Anda dengan cashback & rebate hingga 90% dari berbagai broker terpercaya. Trading tetap berjalan seperti biasa, dan Anda mendapatkan keuntungan tambahan dari setiap lot yang diperdagangkan.
             </p>
 
           </div>
@@ -226,7 +226,7 @@ export default function FXPayoutPage() {
             <p className="font-semibold">Forex Risk Disclaimer</p>
 
             <p>
-              Trading forex melibatkan risiko tinggi.
+              Trading forex melibatkan risiko tinggi. Pastikan Anda memahami risiko sebelum melakukan transaksi. FXPayout tidak bertanggung jawab atas kerugian finansial yang mungkin terjadi.
             </p>
 
             <p className="pt-2 font-medium">
