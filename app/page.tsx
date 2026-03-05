@@ -151,7 +151,7 @@ export default function FXPayoutPage() {
                   <div className="flex items-center gap-4 mb-4 pb-3 border-b border-gray-200">
 
                     <img
-                      src={`https://www.google.com/s2/favicons?sz=128&domain=${broker.domain}`}
+                      src={broker.name === 'Headway' ? '/headway-logo.png' :`https://www.google.com/s2/favicons?sz=128&domain=${broker.domain}`}
                       alt={broker.name}
                       width={40}
                       height={40}
