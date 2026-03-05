@@ -252,6 +252,42 @@ export const brokers: Broker[] = [
       { name: "XAU/USD", rebateText: "30% Spread Revshare" },
       { name: "CRYPTO", rebateText: "30% Spread Revshare" }
     ]
+  },
+
+ {
+    name: "JustMarkets",
+    type: "auto",
+    ibLink: "https://one.justmarkets.link/a/tp7yd30m8b",
+    domain: "justmarkets.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 3 },
+      { name: "XAU/USD", rebate: 7 },
+      { name: "CRYPTO", rebate: 4 }
+    ]
+  },
+
+  {
+    name: "FxPro",
+    type: "manual",
+    ibLink: "https://direct-fxpro.com/en/partner/2iFzxC9Pf",
+    domain: "fxpro.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 5 },
+      { name: "XAU/USD", rebate: 8 },
+      { name: "CRYPTO", rebate: 4 }
+    ]
+  },
+
+  {
+    name: "AvaTrade",
+    type: "manual",
+    ibLink: "https://www.avatrade.com?tag=219594",
+    domain: "avatrade.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 5 },
+      { name: "XAU/USD", rebate: 7 },
+      { name: "CRYPTO", rebate: 4 }
+    ]
   }
 
 ]
