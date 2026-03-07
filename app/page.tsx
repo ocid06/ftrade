@@ -286,8 +286,6 @@ export default function FXPayoutPage() {
   </div>
 
 </div>
-
-</div>
           {/* FOOTER */}
           <div className="text-center text-xs space-y-3 border-t border-[#e5e7eb] pt-8" style={{ color: '#374151' }}>
             <p className="font-semibold">Forex Risk Disclaimer</p>
