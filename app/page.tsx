@@ -252,7 +252,7 @@ export default function FXPayoutPage() {
       </a>
 
       <a
-        href="https://wa.me/628XXXXXXXXXX"
+        href="https://wa.me/628984785573"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-between px-5 py-4 rounded-xl border border-gray-200 bg-white hover:bg-blue-50 transition"
@@ -267,7 +267,7 @@ export default function FXPayoutPage() {
       </a>
 
       <a
-        href="https://whatsapp.com/channel/XXXXXXXX"
+        href="https://whatsapp.com/channel/0029VbBwSxf8fewzsFqX8B2f"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-between px-5 py-4 rounded-xl bg-gradient-to-r from-[#2F5BFF] to-[#3C66F5] text-white shadow-md hover:opacity-90 transition"
