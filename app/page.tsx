@@ -107,12 +107,12 @@ export default function FXPayoutPage() {
 
             <div className="cta-button">
               <a
-                href="https://t.me/+P5ylfSvx1e1jMmI1"
+                href="https://t.me/Ftradeofficial"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full block px-6 py-4 bg-gradient-to-r from-[#2F5BFF] to-[#3C66F5] text-white rounded-[14px] text-center"
               >
-                Grup Khusus Clipper Fxpayout
+                Join Grup FTRADE OFFICIAL COMUNNITY
               </a>
             </div>
 
