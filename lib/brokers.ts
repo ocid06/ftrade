@@ -25,7 +25,7 @@ export const brokers: Broker[] = [
   {
     name: "Exness",
     type: "auto",
-    ibLink: "https://one.exnessonelink.com/a/8cegzmlbpk",
+    ibLink: "https://one.exnessonelink.com/boarding/sign-up/a/fxpayout?lng=id",
     domain: "exness.com",
     instruments: [
       { name: "XAU/USD", rebate: 11.23 },
