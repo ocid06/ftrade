@@ -46,6 +46,18 @@ export const brokers: Broker[] = [
     ]
   },
 
+ {
+    name: "PU Prime",
+    type: "manual",
+    ibLink: "https://puvip.co/la-partners/id/0bGTzP0i",
+    domain: "puprime.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 6.5 },
+      { name: "XAU/USD", rebate: 9.5 },
+      { name: "CRYPTO", rebate: 5.2 }
+    ]
+  },
+
   {
     name: "ZFX",
     type: "manual",
@@ -194,17 +206,6 @@ export const brokers: Broker[] = [
   // YANG TIDAK ADA DI GAMBAR (ISI RANDOM)
   // =========================
 
-  {
-    name: "PU Prime",
-    type: "manual",
-    ibLink: "https://puvip.co/la-partners/id/0bGTzP0i",
-    domain: "puprime.com",
-    instruments: [
-      { name: "EUR/USD", rebate: 6.5 },
-      { name: "XAU/USD", rebate: 9.5 },
-      { name: "CRYPTO", rebate: 5.2 }
-    ]
-  },
 
   {
     name: "VT Markets",
