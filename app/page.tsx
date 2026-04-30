@@ -126,7 +126,7 @@ export default function FXPayoutPage() {
             FTRADE OFFICIAL COMMUNITY
           </h3>
           <p className="text-xs text-gray-500">
-            Komunitas trader FXPayout • Diskusi & insight market
+            Komunitas trader • Diskusi & insight market
           </p>
         </div>
 
