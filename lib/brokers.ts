@@ -46,7 +46,7 @@ export const brokers: Broker[] = [
     ]
   },
 
- {
+  {
     name: "PU Prime",
     type: "manual",
     ibLink: "https://puvip.co/la-partners/id/0bGTzP0i",
@@ -166,6 +166,18 @@ export const brokers: Broker[] = [
     ]
   },
 
+{
+  name: "IC Markets",
+  type: "auto",
+  ibLink: "https://icmarkets.com/?camp=90586",
+  domain: "icmarkets.com",
+  instruments: [
+    { name: "EUR/USD", rebate: 7 },
+    { name: "XAU/USD", rebate: 10 },
+    { name: "CRYPTO", rebate: 6 }
+  ]
+},
+
   {
     name: "Axi",
     type: "auto",
@@ -189,7 +201,7 @@ export const brokers: Broker[] = [
       { name: "AUD/USD", rebate: 3 }
     ]
   },
-
+ 
   {
     name: "Deriv",
     type: "volume",
@@ -205,7 +217,6 @@ export const brokers: Broker[] = [
   // =========================
   // YANG TIDAK ADA DI GAMBAR (ISI RANDOM)
   // =========================
-
 
   {
     name: "VT Markets",
@@ -233,7 +244,7 @@ export const brokers: Broker[] = [
 
   {
     name: "Headway",
-    type: "manual",
+    type: "auto",
     ibLink: "https://headway.partners/user/signup?hwp=8435da",
     domain: "headway.com",
     instruments: [
@@ -289,7 +300,31 @@ export const brokers: Broker[] = [
       { name: "XAU/USD", rebate: 7 },
       { name: "CRYPTO", rebate: 4 }
     ]
-  }
+  },
+
+   {
+    name: "TMGM ",
+    type: "manual",
+    ibLink: "https://portal.tmgm.com/register?r_code=IB1750254951D",
+    domain: "tmgm.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 5 },
+      { name: "XAU/USD", rebate: 7 },
+      { name: "CRYPTO", rebate: 4 }
+    ]
+  },
+
+  {
+  name: "Ultima Markets",
+  type: "manual",
+  ibLink: "https://ultgo.com/la-com/id/LPtmn9kq",
+  domain: "ultimamarkets.com",
+  instruments: [
+    { name: "EUR/USD", rebate: 11 },
+    { name: "XAU/USD", rebate: 12 },
+    { name: "CRYPTO", rebate: 6 }
+  ]
+}
 
 ]
 
