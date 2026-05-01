@@ -312,8 +312,8 @@ export const brokers: Broker[] = [
       { name: "XAU/USD", rebate: 7 },
       { name: "CRYPTO", rebate: 4 }
     ]
-  },
-
+  }, 
+  
   {
   name: "Ultima Markets",
   type: "manual",
@@ -324,7 +324,31 @@ export const brokers: Broker[] = [
     { name: "XAU/USD", rebate: 12 },
     { name: "CRYPTO", rebate: 6 }
   ]
-}
+},
+
+{
+    name: "MIFX",
+    type: "manual",
+    ibLink: "https://mifx.com/live/r/fxpayout",
+    domain: "mifx.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 3 },
+      { name: "XAU/USD", rebate: 3 },
+      { name: "CRYPTO", rebate: 3 }
+    ]
+  },
+
+  {
+    name: "HSB",
+    type: "manual",
+    ibLink: "https://www.hsb.co.id/register?ref_code=QYLW0W-AW2SP",
+    domain: "hsb.co.id",
+    instruments: [
+      { name: "EUR/USD", rebate: 3 },
+      { name: "XAU/USD", rebate: 3 },
+      { name: "CRYPTO", rebate: 3 }
+    ]
+  }
 
 ]
 
