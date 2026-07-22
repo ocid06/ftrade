@@ -12,6 +12,10 @@ export type Broker = {
   name: string
   type: BrokerType
   ibLink: string
+  registerOptions?: {
+    name: string
+    url: string
+  }[]
   domain: string
   instruments: Instrument[]
 }
@@ -22,27 +26,47 @@ export const brokers: Broker[] = [
   // DATA SESUAI SCREENSHOT
   // =========================
 
-  {
-    name: "Exness",
-    type: "auto",
-    ibLink: "https://one.exnessonelink.com/boarding/sign-up/a/fxpayout?lng=id",
-    domain: "exness.com",
-    instruments: [
-      { name: "XAU/USD", rebate: 11.23 },
-      { name: "FOREX", rebate: 3.99 },
-      { name: "CRYPTO", rebate: 7.2 }
-    ]
-  },
-
+{
+  name: "TMGM",
+  type: "manual",
+  registerOptions: [
+    {
+      name: "STD-SWF-USD",
+      url: "https://portal.tmgm-tmc.com/register?node=MzUyNjY3&language=en"
+    },
+    {
+      name: "STD-SF-USC",
+      url: "https://portal.tmgm-tmc.com/register?node=MzUyNjA4&language=en"
+    }
+  ],
+  domain: "tmgm.com",
+  instruments: [
+    { name: "EUR/USD", rebate: 5 },
+    { name: "XAU/USD", rebate: 18 },
+    { name: "CRYPTO", rebate: 1 }
+  ]
+},
   {
     name: "Valetax",
     type: "manual",
     ibLink: "https://ma.valetax-indonesia.com/p/5808172",
     domain: "valetax.com",
     instruments: [
-      { name: "EUR/USD", rebate: 11 },
-      { name: "XAU/USD", rebate: 16 },
-      { name: "CRYPTO", rebate: 13 }
+      { name: "eurUsd", rebate: 11 },
+      { name: "xauUsd", rebate: 16 },
+      { name: "crypto", rebate: 13 }
+    ]
+  },
+
+    {
+    name: "Exness",
+    type: "auto",
+    ibLink: "https://one.exnessonelink.com/boarding/sign-up/a/fxpayout?lng=id",
+    domain: "exness.com",
+    instruments: [
+      { name: "xauUsd", rebate: 11.23 },
+      { name: "forex", rebate: 3.99 },
+      { name: "crypto", rebate: 7.2 }
     ]
   },
 
@@ -52,9 +76,9 @@ export const brokers: Broker[] = [
     ibLink: "https://puvip.co/la-partners/id/0bGTzP0i",
     domain: "puprime.com",
     instruments: [
-      { name: "EUR/USD", rebate: 6.5 },
-      { name: "XAU/USD", rebate: 9.5 },
-      { name: "CRYPTO", rebate: 5.2 }
+      { name: "eurUsd", rebate: 6.5 },
+      { name: "xauUsd", rebate: 9.5 },
+      { name: "crypto", rebate: 5.2 }
     ]
   },
 
@@ -64,9 +88,45 @@ export const brokers: Broker[] = [
     ibLink: "https://my.zm-area.com/reg/truely?agentnumber=Z940752S4",
     domain: "zfx.com",
     instruments: [
-      { name: "EUR/USD", rebate: 8 },
-      { name: "XAU/USD", rebate: 13 },
-      { name: "CRYPTO", rebate: 8 }
+      { name: "eurUsd", rebate: 8 },
+      { name: "xauUsd", rebate: 13 },
+      { name: "crypto", rebate: 8 }
+    ]
+  },
+
+  {
+    name: "HFM",
+    type: "auto",
+    ibLink: "https://register.hfmtrade-ind.com/sv/en/new-live-account/?refid=30494425",
+    domain: "hfm.com",
+    instruments: [
+      { name: "eurUsd", rebate: 3.2 },
+      { name: "xauUsd", rebate: 9 },
+      { name: "crypto", rebate: 0.8 }
+    ]
+  },
+
+  {
+    name: "FBS",
+    type: "manual",
+    ibLink: "https://fbs.partners/?ibl=569605&ibp=17852638",
+    domain: "fbs.com",
+    instruments: [
+      { name: "eurUsd", rebate: 3.61 },
+      { name: "xauUsd", rebate: 10 },
+      { name: "crypto", rebate: 2.5 }
+    ]
+  },
+
+  {
+    name: "OctaFX/Elev8",
+    type: "manual",
+    ibLink: "https://octa.click/bJLCLmX8zDZ?ib=47807098",
+    domain: "octafx.com",
+    instruments: [
+      { name: "eurUsd", rebate: 8 },
+      { name: "xauUsd", rebate: 8 },
+      { name: "crypto", rebate: 8 }
     ]
   },
 
@@ -81,42 +141,30 @@ export const brokers: Broker[] = [
       { name: "CRYPTO", rebate: 25 }
     ]
   },
-
+  
   {
-    name: "HFM",
-    type: "auto",
-    ibLink: "https://register.hfmtrade-ind.com/sv/en/new-live-account/?refid=30494425",
-    domain: "hfm.com",
-    instruments: [
-      { name: "EUR/USD", rebate: 3.2 },
-      { name: "XAU/USD", rebate: 9 },
-      { name: "CRYPTO", rebate: 0.8 }
-    ]
-  },
-
-  {
-    name: "FBS",
+    name: "VT Markets",
     type: "manual",
-    ibLink: "https://fbs.partners/?ibl=569605&ibp=17852638",
-    domain: "fbs.com",
+    ibLink: "https://www.vtmarkets.com/trade-now/?affid=22395035",
+    domain: "vtmarkets.com",
     instruments: [
-      { name: "EUR/USD", rebate: 3.61 },
-      { name: "XAU/USD", rebate: 10 },
-      { name: "CRYPTO", rebate: 2.5 }
+      { name: "EUR/USD", rebate: 7 },
+      { name: "XAU/USD", rebate: 11 },
+      { name: "CRYPTO", rebate: 6 }
     ]
   },
 
   {
-    name: "OctaFX/Elev8",
-    type: "manual",
-    ibLink: "https://octa.click/bJLCLmX8zDZ?ib=47807098",
-    domain: "octafx.com",
-    instruments: [
-      { name: "EUR/USD", rebate: 8 },
-      { name: "XAU/USD", rebate: 8 },
-      { name: "CRYPTO", rebate: 8 }
-    ]
-  },
+  name: "Ultima Markets",
+  type: "manual",
+  ibLink: "https://ultgo.com/la-com/id/LPtmn9kq",
+  domain: "ultimamarkets.com",
+  instruments: [
+    { name: "EUR/USD", rebate: 11 },
+    { name: "XAU/USD", rebate: 12 },
+    { name: "CRYPTO", rebate: 6 }
+  ]
+},
 
   {
     name: "Tickmill",
@@ -168,7 +216,7 @@ export const brokers: Broker[] = [
 
 {
   name: "IC Markets",
-  type: "auto",
+  type: "manual",
   ibLink: "https://icmarkets.com/?camp=90586",
   domain: "icmarkets.com",
   instruments: [
@@ -180,7 +228,7 @@ export const brokers: Broker[] = [
 
   {
     name: "Axi",
-    type: "auto",
+    type: "manual",
     ibLink: "https://www.axi.com/int/live-account?promocode=4736053",
     domain: "axi.com",
     instruments: [
@@ -208,27 +256,15 @@ export const brokers: Broker[] = [
     ibLink: "https://deriv.partners/rx?sidc=07DDC1C5-AE63-4FC9-A23D-C6DA444F9225&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU279711",
     domain: "deriv.com",
     instruments: [
-      { name: "Forex", rebateText: "Up to 40% Trading Fee" },
-      { name: "Gold", rebateText: "Volume Commission" },
-      { name: "Crypto", rebateText: "Volume Commission" }
+      { name: "forex", rebateText: "upTo40TradingFee" },
+      { name: "gold", rebateText: "volumeCommission" },
+      { name: "crypto", rebateText: "volumeCommission" }
     ]
   },
 
   // =========================
   // YANG TIDAK ADA DI GAMBAR (ISI RANDOM)
   // =========================
-
-  {
-    name: "VT Markets",
-    type: "manual",
-    ibLink: "https://www.vtmarkets.com/trade-now/?affid=22395035",
-    domain: "vtmarkets.com",
-    instruments: [
-      { name: "EUR/USD", rebate: 7 },
-      { name: "XAU/USD", rebate: 11 },
-      { name: "CRYPTO", rebate: 6 }
-    ]
-  },
 
   {
     name: "EC Markets",
@@ -260,9 +296,9 @@ export const brokers: Broker[] = [
     ibLink: "https://go.oanda.com/visit/?bta=39193&brand=oanda",
     domain: "oanda.com",
     instruments: [
-      { name: "EUR/USD", rebateText: "30% Spread Revshare" },
-      { name: "XAU/USD", rebateText: "30% Spread Revshare" },
-      { name: "CRYPTO", rebateText: "30% Spread Revshare" }
+      { name: "eurUsd", rebateText: "spreadRevshare" },
+      { name: "xauUsd", rebateText: "spreadRevshare" },
+      { name: "crypto", rebateText: "spreadRevshare" }
     ]
   },
 
@@ -296,35 +332,24 @@ export const brokers: Broker[] = [
     ibLink: "https://www.avatrade.com?tag=219594",
     domain: "avatrade.com",
     instruments: [
-      { name: "EUR/USD", rebate: 5 },
-      { name: "XAU/USD", rebate: 7 },
-      { name: "CRYPTO", rebate: 4 }
+      { name: "eurUsd", rebate: 5 },
+      { name: "xauUsd", rebate: 17 },
+      { name: "crypto", rebate: 4 }
     ]
   },
 
-   {
-    name: "TMGM ",
+     {
+    name: "CXM",
     type: "manual",
-    ibLink: "https://portal.tmgm.com/register?r_code=IB1750254951D",
-    domain: "tmgm.com",
+    ibLink: "https://secure.cxmid.com/links/go/346478",
+    domain: "cxm.com",
     instruments: [
-      { name: "EUR/USD", rebate: 5 },
+      { name: "EUR/USD", rebate: 3 },
       { name: "XAU/USD", rebate: 7 },
-      { name: "CRYPTO", rebate: 4 }
+      { name: "CRYPTO", rebate: 2 }
     ]
-  }, 
-  
-  {
-  name: "Ultima Markets",
-  type: "manual",
-  ibLink: "https://ultgo.com/la-com/id/LPtmn9kq",
-  domain: "ultimamarkets.com",
-  instruments: [
-    { name: "EUR/USD", rebate: 11 },
-    { name: "XAU/USD", rebate: 12 },
-    { name: "CRYPTO", rebate: 6 }
-  ]
-},
+  },
+
 
 {
     name: "MIFX",
@@ -349,6 +374,9 @@ export const brokers: Broker[] = [
       { name: "CRYPTO", rebate: 3 }
     ]
   }
+
+
+
 
 ]
 
