@@ -31,11 +31,11 @@ export const brokers: Broker[] = [
   type: "manual",
   registerOptions: [
     {
-      name: "STD-SWF-USD",
+      name: "STANDARD",
       url: "https://portal.tmgm-tmc.com/register?node=MzUyNjY3&language=en"
     },
     {
-      name: "STD-SF-USC",
+      name: "CENT",
       url: "https://portal.tmgm-tmc.com/register?node=MzUyNjA4&language=en"
     }
   ],
