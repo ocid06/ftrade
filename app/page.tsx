@@ -762,7 +762,7 @@ useEffect(() => {
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#2F5BFF] text-lg text-white transition group-hover:translate-x-1">
                 →
               </span>
-            </a>
+            <div>
           ))}
         </div>
 

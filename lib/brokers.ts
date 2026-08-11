@@ -11,7 +11,7 @@ export type BrokerType = 'auto' | 'manual' | 'volume'
 export type Broker = {
   name: string
   type: BrokerType
-  ibLink: string
+  ibLink?: string
   registerOptions?: {
     name: string
     url: string
@@ -46,6 +46,7 @@ export const brokers: Broker[] = [
     { name: "CRYPTO", rebate: 1 }
   ]
 },
+
   {
     name: "Valetax",
     type: "manual",
@@ -119,10 +120,10 @@ export const brokers: Broker[] = [
   },
 
   {
-    name: "OctaFX/Elev8",
+    name: "Elev8",
     type: "manual",
-    ibLink: "https://octa.click/bJLCLmX8zDZ?ib=47807098",
-    domain: "octafx.com",
+    ibLink: "https://clickto.trade/bJLCLmX8zDZ?ib=47807098",
+    domain: "eleveightmarkets.net/",
     instruments: [
       { name: "eurUsd", rebate: 8 },
       { name: "xauUsd", rebate: 8 },
@@ -253,7 +254,7 @@ export const brokers: Broker[] = [
   {
     name: "Deriv",
     type: "volume",
-    ibLink: "https://deriv.partners/rx?sidc=07DDC1C5-AE63-4FC9-A23D-C6DA444F9225&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU279711",
+    ibLink: "https://t.deriv.link?t=CH9N2Q7ARXR5",
     domain: "deriv.com",
     instruments: [
       { name: "forex", rebateText: "upTo40TradingFee" },
@@ -287,6 +288,18 @@ export const brokers: Broker[] = [
       { name: "EUR/USD", rebate: 3 },
       { name: "XAU/USD", rebate: 3 },
       { name: "CRYPTO", rebate: 2 }
+    ]
+  },
+
+{
+    name: "Markets4you",
+    type: "manual",
+    ibLink: "https://account.markets4you.online/en/user-registration/?affid=tvborws",
+    domain: "markets4you.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 3 },
+      { name: "XAU/USD", rebate: 3 },
+      { name: "CRYPTO", rebate: 3 }
     ]
   },
 
