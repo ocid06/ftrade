@@ -112,8 +112,13 @@ useEffect(() => {
     }
 
     let isMounted = true;
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), 2000);
 
-    fetch('https://www.cloudflare.com/cdn-cgi/trace', { cache: 'no-store' })
+    fetch('https://www.cloudflare.com/cdn-cgi/trace', {
+      cache: 'no-store',
+      signal: controller.signal,
+    })
       .then((response) => response.text())
       .then((traceData) => {
         if (!isMounted) return;
@@ -144,6 +149,7 @@ useEffect(() => {
         }
       })
       .finally(() => {
+        window.clearTimeout(timeoutId);
         if (isMounted) {
           setIsLocaleReady(true);
         }
@@ -151,6 +157,8 @@ useEffect(() => {
 
     return () => {
       isMounted = false;
+      controller.abort();
+      window.clearTimeout(timeoutId);
     };
   }, []);
 
@@ -762,7 +770,7 @@ useEffect(() => {
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#2F5BFF] text-lg text-white transition group-hover:translate-x-1">
                 →
               </span>
-            <div>
+            </a>
           ))}
         </div>
 

@@ -34,11 +34,12 @@ export const metadata: Metadata = {
       zh: 'https://fxpayout.com',
     },
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    userScalable: false,
-  },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  userScalable: false,
 }
 
 export default function RootLayout({
