@@ -29,6 +29,7 @@ export const brokers: Broker[] = [
 {
   name: "TMGM",
   type: "manual",
+  ibLink: "https://portal.tmgm-tmc.com/register?node=MzUyNjY3&language=en",
   registerOptions: [
     {
       name: "STANDARD",
@@ -116,6 +117,18 @@ export const brokers: Broker[] = [
       { name: "eurUsd", rebate: 3.61 },
       { name: "xauUsd", rebate: 10 },
       { name: "crypto", rebate: 2.5 }
+    ]
+  },
+
+  {
+    name: "JunoMarkets",
+    type: "manual",
+    ibLink: "https://my.junoportal.com/en/auth?refercode=3GPmiy",
+    domain: "junomarkets.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 3 },
+      { name: "XAU/USD", rebate: 3 },
+      { name: "CRYPTO", rebate: 2 }
     ]
   },
 
@@ -276,6 +289,17 @@ export const brokers: Broker[] = [
       { name: "EUR/USD", rebate: 10 },
       { name: "XAU/USD", rebate: 15 },
       { name: "CRYPTO", rebate: 10 }
+    ]
+  },
+
+  {
+    name: "Blueberry Markets",
+    type: "manual",
+    ibLink: "https://portal.blueberrymarkets.com/rc/gj12bobj08",
+    domain: "blueberrymarkets.com",
+    instruments: [
+      { name: "EUR/USD", rebate: 10 },
+      { name: "XAU/USD", rebate: 12 }
     ]
   },
 
